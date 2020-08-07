@@ -2,9 +2,8 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://malneyungfl:nguyen05041989@mongodb://<dbuser>:<dbpassword>@ds331558.mlab.com:31558/heroku_bks1xvv2"
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
